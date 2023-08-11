@@ -254,11 +254,12 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 100px;
+  line-height:60px;
 }
 
 #name {
   font-size: 18px;
-  
+  color:#000;
   font-weight:bold;
 }
 
