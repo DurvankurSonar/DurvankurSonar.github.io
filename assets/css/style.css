@@ -242,6 +242,7 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 100px;
+  text-shadow: 2px 2px 3px #000;
 }
 
 #name-heading{
@@ -260,6 +261,7 @@ h6 {
 #name {
   font-size: 18px;
   color:#fff;
+  text-shadow: 2px 2px 3px #000;
   font-weight:bold;
 }
 
