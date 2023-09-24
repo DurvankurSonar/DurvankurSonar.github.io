@@ -26,7 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+ 
 </head>
 
 <body>
@@ -273,64 +273,117 @@
         </div>
 
         
-	<ul class="timelineee" >
+<ul class="timelineee" data-aos="zoom-in">
+
+<li >
+	<div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">Java Programming Intern</span>
+        <span class="time-wrapper"><span class="time">September 2023</span></span>
+      </div>
+      <div class="desc"><i class="bx bx-map"></i><b style="color:#0dcaf0;"> Oasis Infobyte</b>
+		<div class="container my-4">
+			<p style="text-align:justify" class="text">
+				Implemented new features and enhancements to existing Java applications.
+				<span class="hidden-content">
+                <br>Familiarity with front-end technologies (HTML, CSS, JavaScript) and their integration with Java backend systems.
+				<br><br>Actively participated in team meetings, contributing innovative ideas and solutions to technical challenges.
+				</span>
+			</p>
+        <button class="  btn btn-sm btn-light btn-outline-info waves-effect waves-light m-1 toggle-button">Read More</button>
+       </div>
+    </div>
+  </li >
   
   <li >
-    <div class="direction-r">
+	<div class="direction-l">
       <div class="flag-wrapper">
         <span class="hexa"></span>
         <span class="flag">Java Programming Intern</span>
         <span class="time-wrapper"><span class="time">August 2023</span></span>
       </div>
       <div class="desc"><i class="bx bx-map"></i><b style="color:#0dcaf0;"> Oasis Infobyte</b>
-			<div class="content">
-			<ul style="text-align:justify" class="text">
-				<li>Proficient in Java programming, with a strong understanding of object-oriented principles and design patterns.
-				<li>Hands-on experience with Java frameworks like Spring and Spring Boot for building scalable and maintainable applications.</li>
-				<li>Successfully identified and resolved critical bugs within the codebase, improving the application's stability and user experience.</li>
-			</ul>
-		</div>
+		<div class="container my-4">
+			<p style="text-align:justify" class="text">
+				Proficient in Java programming, with a strong understanding of object-oriented principles and design patterns.
+				<span class="hidden-content">
+                <br>Hands-on experience with Java frameworks like Spring and Spring Boot for building scalable and maintainable applications.
+				<br><br>Successfully identified and resolved critical bugs within the codebase, improving the application's stability and user experience.
+				</span>
+			</p>
+        <button class="  btn btn-sm btn-light btn-outline-info waves-effect waves-light m-1 toggle-button">Read More</button>
+       </div>
     </div>
-  </li>
+  </li >
 
-  <li>
-    <div class="direction-l">
+    <li >
+	<div class="direction-r">
       <div class="flag-wrapper">
         <span class="hexa"></span>
         <span class="flag">Web Developer Intern</span>
         <span class="time-wrapper"><span class="time">July 2023</span></span>
       </div>
       <div class="desc"><i class="bx bx-map"></i><b style="color:#0dcaf0;"> LetsGrowMore</b>
-			<ul style="text-align:justify">
-				<li>Familiarity with modern frontend frameworks such as React, Angular, or Vue.js.
-				<li>Collaborated with senior developers to design and implement database structures using tools like MongoDB, MySQL, or PostgreSQL.</li>
-				<li>Conducted thorough testing of web applications to identify and rectify issues, contributing to improved software quality and user satisfaction.</li>
-			</ul>
-	  </div>
+		<div class="container my-4">
+			<p style="text-align:justify" class="text">
+				Familiarity with modern frontend frameworks such as React, Angular, or Vue.js.
+				<span class="hidden-content">
+                <br>Collaborated with senior developers to design and implement database structures using tools like MongoDB, MySQL, or PostgreSQL.
+				<br><br>Conducted thorough testing of web applications to identify and rectify issues, contributing to improved software quality and user satisfaction.
+				</span>
+			</p>
+        <button class="  btn btn-sm btn-light btn-outline-info waves-effect waves-light m-1 toggle-button">Read More</button>
+       </div>
     </div>
-  </li>
-
-
-  <li>
-    <div class="direction-r" >
+  </li >
+  
+ <li >
+	<div class="direction-l">
       <div class="flag-wrapper">
         <span class="hexa"></span>
         <span class="flag">Web Developer Trainee</span>
         <span class="time-wrapper"><span class="time">July 2022 - August 2022</span></span>
       </div>
-      <div class="desc"><i class="bx bx-map"></i><b style="color:#0dcaf0;"> Softanic Solutions Pvt. Ltd.</b>
-			<ul style="text-align:justify">
-				<li>Proficient in HTML, CSS, and JavaScript, with a focus on creating responsive and user-friendly web interfaces.</li>
-				<li>Collaborated on a team project to develop a responsive e-commerce website using HTML, CSS, and JavaScript, showcasing strong teamwork and problem-solving skills.</li>
-				<li>Tested and optimized websites for cross-browser compatibility, ensuring consistent appearance and functionality across various browsers and devices.</li>
-			</ul>
-	  </div>
+      <div class="desc"><i class="bx bx-map"></i><b style="color:#0dcaf0;"> Oasis Infobyte</b>
+		<div class="container my-4">
+			<p style="text-align:justify" class="text">
+				Proficient in HTML, CSS, and JavaScript, with a focus on creating responsive and user-friendly web interfaces.
+				<span class="hidden-content">
+                <br>Collaborated on a team project to develop a responsive e-commerce website using HTML, CSS, and JavaScript, showcasing strong teamwork and problem-solving skills.
+				<br><br>Tested and optimized websites for cross-browser compatibility, ensuring consistent appearance and functionality across various browsers and devices.
+				</span>
+			</p>
+        <button class="  btn btn-sm btn-light btn-outline-info waves-effect waves-light m-1 toggle-button">Read More</button>
+       </div>
     </div>
-  </li>
+  </li >
+
 </ul>
 </section>	
 <br>
 <br>
+
+	<!-- Read more button JavaScript -->
+					<script>
+						document.addEventListener("DOMContentLoaded", function () {
+							const toggleButtons = document.querySelectorAll(".toggle-button");
+
+							toggleButtons.forEach(button => {
+								button.addEventListener("click", function () {
+									const hiddenContent = this.previousElementSibling.querySelector(".hidden-content");
+									if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+										hiddenContent.style.display = "block";
+										this.textContent = "Read Less";
+									} else {
+										hiddenContent.style.display = "none";
+										this.textContent = "Read More";
+									}
+								});
+							});
+						});
+					</script>
+
 	<!-- End Experience Section -->
 
 
@@ -553,8 +606,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
 					 <h2 class="text-white mb-4">Location</h2>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3578647839004!2d75.56750097443422!3d21.01836228813725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90fd2a637bdd1%3A0x934e88cb3bb51172!2sDurvankur%20Sonar!5e0!3m2!1sen!2sin!4v1694002906003!5m2!1sen!2sin" class="col-lg-6 col-md-6 col-sm-12 col-es-12"  height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3578647839345!2d75.56750097509548!3d21.018362288135908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90fd2a637bdd1%3A0x934e88cb3bb51172!2sDurvankur%20Sonar!5e0!3m2!1sen!2sin!4v1695536539903!5m2!1sen!2sin" class="col-lg-6 col-md-6 col-sm-12 col-es-12"  height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 					
                 </div>
@@ -573,7 +625,7 @@
     <div class="container">
       <div class="copyright">
 	  <img src="assets/img/MYLOGO.png" height="50px" width="70px" alt="Durvankur">
-        &copy; Copyright <strong><span>Durvankur</span></strong>
+        Designed by <strong><span>Durvankur</span></strong>
       </div>
       
     </div>
