@@ -648,14 +648,6 @@ section {
 
 
 
-
-
-
-
-
-
-
-
 /*Footer*/
 #footer {
   padding: 15px;
@@ -1211,3 +1203,8 @@ header h1{
 }
 
 /* show more button */
+
+        .hidden-content {
+            display: none;
+        }
+   
